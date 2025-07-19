@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - MediCare Hospital</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-heartbeat"></i>
+                <span>MediCare</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="doctors.html" class="nav-link">Doctors</a></li>
+                <li><a href="appointment.html" class="nav-link">Appointment</a></li>
+                <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+                <li><a href="blogs.html" class="nav-link">Blog</a></li>
+                <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Hospital Gallery</h1>
+            <p>Take a virtual tour of our state-of-the-art facilities and medical equipment</p>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <div class="container">
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="facilities">
+                    <img src="images/lobby.jpg" alt="Hospital Lobby">
+                    <div class="gallery-overlay">
+                        <h3>Main Lobby</h3>
+                        <p>Welcoming reception area</p>
+                        <button class="view-btn" onclick="openLightbox('/placeholder.svg?height=600&width=800&text=Hospital+Lobby', 'Main Lobby', 'Welcoming reception area with comfortable seating')">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="equipment">
+                    <img src="images/mri.jpg" alt="MRI Machine">
+                    <div class="gallery-overlay">
+                        <h3>MRI Scanner</h3>
+                        <p>Advanced imaging technology</p>
+                        <button class="view-btn" onclick="openLightbox('/placeholder.svg?height=600&width=800&text=MRI+Machine', 'MRI Scanner', 'State-of-the-art MRI machine for detailed imaging')">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="rooms">
+                    <img src="images/room.jpg" alt="Patient Room">
+                    <div class="gallery-overlay">
+                        <h3>Patient Room</h3>
+                        <p>Comfortable private rooms</p>
+                        <button class="view-btn" onclick="openLightbox('/placeholder.svg?height=600&width=800&text=Patient+Room', 'Patient Room', 'Comfortable and well-equipped patient rooms')">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="facilities">
+                    <img src="images/operation.jpg" alt="Operating Theater">
+                    <div class="gallery-overlay">
+                        <h3>Operating Theater</h3>
+                        <p>Modern surgical facilities</p>
+                        <button class="view-btn" onclick="openLightbox('/placeholder.svg?height=600&width=800&text=Operating+Theater', 'Operating Theater', 'Advanced surgical suite with latest technology')">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="equipment">
+                    <img src="images/ct scan.jpg" alt="CT Scanner">
+                    <div class="gallery-overlay">
+                        <h3>CT Scanner</h3>
+                        <p>High-resolution imaging</p>
+                        <button class="view-btn" onclick="openLightbox('/placeholder.svg?height=600&width=800&text=CT+Scanner', 'CT Scanner', 'Advanced CT scanner for precise diagnostics')">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="facilities">
+                    <img src="images/emergency room.jpg" alt="Emergency Room">
+                    <div class="gallery-overlay">
+                        <h3>Emergency Department</h3>
+                        <p>24/7 emergency care</p>
+                        <button class="view-btn" onclick="openLightbox('/placeholder.svg?height=600&width=800&text=Emergency+Room', 'Emergency Department', '24/7 emergency care with rapid response team')">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="rooms">
+                    <img src="images/icu room.jpg" alt="ICU Ward">
+                    <div class="gallery-overlay">
+                        <h3>ICU Ward</h3>
+                        <p>Intensive care unit</p>
+                        <button class="view-btn" onclick="openLightbox('/placeholder.svg?height=600&width=800&text=ICU+Ward', 'ICU Ward', 'Advanced intensive care unit with monitoring systems')">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="facilities">
+                    <img src="images/lab.jpg" alt="Laboratory">
+                    <div class="gallery-overlay">
+                        <h3>Laboratory</h3>
+                        <p>Diagnostic testing facility</p>
+                        <button class="view-btn" onclick="openLightbox('/placeholder.svg?height=600&width=800&text=Laboratory', 'Laboratory', 'Modern laboratory with advanced testing equipment')">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="facilities">
+                    <img src="images/pharmacy.jpg" alt="Pharmacy">
+                    <div class="gallery-overlay">
+                        <h3>Pharmacy</h3>
+                        <p>On-site medication services</p>
+                        <button class="view-btn" onclick="openLightbox('/placeholder.svg?height=600&width=800&text=Pharmacy', 'Pharmacy', 'Full-service pharmacy with prescription services')">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="rooms">
+                    <img src="images/room.jpg" alt="Consultation Room">
+                    <div class="gallery-overlay">
+                        <h3>Consultation Room</h3>
+                        <p>Private doctor consultations</p>
+                        <button class="view-btn" onclick="openLightbox('/placeholder.svg?height=600&width=800&text=Consultation+Room', 'Consultation Room', 'Private consultation rooms for doctor visits')">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="facilities">
+                    <img src="images/cafe.jpg" alt="Cafeteria">
+                    <div class="gallery-overlay">
+                        <h3>Cafeteria</h3>
+                        <p>Dining area for visitors</p>
+                        <button class="view-btn" onclick="openLightbox('/placeholder.svg?height=600&width=800&text=Cafeteria', 'Cafeteria', 'Comfortable dining area with healthy meal options')">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="equipment">
+                    <img src="images/ct scan.jpg" alt="X-Ray Machine">
+                    <div class="gallery-overlay">
+                        <h3>X-Ray Equipment</h3>
+                        <p>Digital radiography</p>
+                        <button class="view-btn" onclick="openLightbox('/placeholder.svg?height=600&width=800&text=X-Ray+Machine', 'X-Ray Equipment', 'Digital X-ray equipment for quick and accurate imaging')">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+            <img id="lightbox-image" src="/placeholder.svg" alt="">
+            <div class="lightbox-info">
+                <h3 id="lightbox-title"></h3>
+                <p id="lightbox-description"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-heartbeat"></i>
+                        <span>MediCare</span>
+                    </div>
+                    <p>Providing quality healthcare services with compassion and expertise.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="doctors.html">Our Doctors</a></li>
+                        <li><a href="appointment.html">Book Appointment</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Healthcare St, Medical City</p>
+                        <p><i class="fas fa-phone"></i> +1-234-567-8900</p>
+                        <p><i class="fas fa-envelope"></i> info@medicare.com</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 MediCare Hospital. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+     <!-- Floating Chatbot Button -->
+<img src="images/chatbot.jpg" alt="Chatbot" id="chatbotBtn"
+     style="position: fixed; bottom: 20px; right: 20px; width: 60px; cursor: pointer; z-index: 999; border-radius: 30px;" />
+
+<!-- Chatbot Modal -->
+<div id="chatbotModal" style="display:none; position:fixed; bottom:90px; right:20px; width: 350px; height: 500px; background:white; border-radius:10px; box-shadow: 0 0 10px rgba(0,0,0,0.2); z-index:999;">
+  <div style="text-align:right; padding: 5px;">
+    <button onclick="document.getElementById('chatbotModal').style.display='none'">✖</button>
+  </div>
+  <iframe src="https://chatbot-six-tawny-92.vercel.app/" width="100%" height="90%" style="border:none;"></iframe>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

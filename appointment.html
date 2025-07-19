@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment - MediCare Hospital</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-heartbeat"></i>
+                <span>MediCare</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="doctors.html" class="nav-link">Doctors</a></li>
+                <li><a href="appointment.html" class="nav-link active">Appointment</a></li>
+                <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="blogs.html" class="nav-link">Blog</a></li>
+                <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Book an Appointment</h1>
+            <p>Schedule your visit with our expert healthcare professionals</p>
+        </div>
+    </section>
+
+    <!-- Appointment Form -->
+    <section class="appointment-section">
+        <div class="container">
+            <div class="appointment-container">
+                <div class="appointment-info">
+                    <h2>Schedule Your Visit</h2>
+                    <p>Fill out the form below to book your appointment. Our team will contact you to confirm your booking.</p>
+                    
+                    <div class="appointment-benefits">
+                        <div class="benefit-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Quick Booking</h4>
+                                <p>Easy online appointment scheduling</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-user-md"></i>
+                            <div>
+                                <h4>Expert Doctors</h4>
+                                <p>Experienced healthcare professionals</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <div>
+                                <h4>Safe Environment</h4>
+                                <p>Clean and sanitized facilities</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="appointment-form">
+                    <form id="appointmentForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="department">Department *</label>
+                                <select id="department" name="department" required>
+                                    <option value="">Select Department</option>
+                                    <option value="cardiology">Cardiology</option>
+                                    <option value="pediatrics">Pediatrics</option>
+                                    <option value="neurology">Neurology</option>
+                                    <option value="orthopedics">Orthopedics</option>
+                                    <option value="dermatology">Dermatology</option>
+                                    <option value="general">General Medicine</option>
+                                    <option value="emergency">Emergency</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="doctor">Preferred Doctor</label>
+                                <select id="doctor" name="doctor">
+                                    <option value="">Any Available Doctor</option>
+                                    <option value="dr-smith">Dr. John Smith</option>
+                                    <option value="dr-johnson">Dr. Sarah Johnson</option>
+                                    <option value="dr-brown">Dr. Michael Brown</option>
+                                    <option value="dr-davis">Dr. Emily Davis</option>
+                                    <option value="dr-wilson">Dr. Robert Wilson</option>
+                                    <option value="dr-miller">Dr. James Miller</option>
+                                    <option value="dr-garcia">Dr. Maria Garcia</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="appointmentDate">Preferred Date *</label>
+                                <input type="date" id="appointmentDate" name="appointmentDate" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="appointmentTime">Preferred Time *</label>
+                                <select id="appointmentTime" name="appointmentTime" required>
+                                    <option value="">Select Time</option>
+                                    <option value="09:00">09:00 AM</option>
+                                    <option value="09:30">09:30 AM</option>
+                                    <option value="10:00">10:00 AM</option>
+                                    <option value="10:30">10:30 AM</option>
+                                    <option value="11:00">11:00 AM</option>
+                                    <option value="11:30">11:30 AM</option>
+                                    <option value="14:00">02:00 PM</option>
+                                    <option value="14:30">02:30 PM</option>
+                                    <option value="15:00">03:00 PM</option>
+                                    <option value="15:30">03:30 PM</option>
+                                    <option value="16:00">04:00 PM</option>
+                                    <option value="16:30">04:30 PM</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="reason">Reason for Visit</label>
+                            <textarea id="reason" name="reason" rows="4" placeholder="Please describe your symptoms or reason for the appointment"></textarea>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="terms" name="terms" required>
+                                <span class="checkmark"></span>
+                                I agree to the <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-large">Book Appointment</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Modal -->
+    <div class="modal" id="successModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <i class="fas fa-check-circle"></i>
+                <h2>Appointment Booked Successfully!</h2>
+            </div>
+            <div class="modal-body">
+                <p>Thank you for booking your appointment with MediCare Hospital. We have received your request and will contact you shortly to confirm your appointment details.</p>
+                <div class="appointment-summary" id="appointmentSummary">
+                    <!-- Appointment details will be populated here -->
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" onclick="closeModal()">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-heartbeat"></i>
+                        <span>MediCare</span>
+                    </div>
+                    <p>Providing quality healthcare services with compassion and expertise.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="doctors.html">Our Doctors</a></li>
+                        <li><a href="appointment.html">Book Appointment</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Healthcare St, Medical City</p>
+                        <p><i class="fas fa-phone"></i> +1-234-567-8900</p>
+                        <p><i class="fas fa-envelope"></i> info@medicare.com</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 MediCare Hospital. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+     <!-- Floating Chatbot Button -->
+<img src="images/chatbot.jpg" alt="Chatbot" id="chatbotBtn"
+     style="position: fixed; bottom: 20px; right: 20px; width: 60px; cursor: pointer; z-index: 999; border-radius: 30px;" />
+
+<!-- Chatbot Modal -->
+<div id="chatbotModal" style="display:none; position:fixed; bottom:90px; right:20px; width: 350px; height: 500px; background:white; border-radius:10px; box-shadow: 0 0 10px rgba(0,0,0,0.2); z-index:999;">
+  <div style="text-align:right; padding: 5px;">
+    <button onclick="document.getElementById('chatbotModal').style.display='none'">✖</button>
+  </div>
+  <iframe src="https://chatbot-six-tawny-92.vercel.app/" width="100%" height="90%" style="border:none;"></iframe>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

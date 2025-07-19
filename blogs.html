@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - MediCare Hospital</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-heartbeat"></i>
+                <span>MediCare</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="doctors.html" class="nav-link">Doctors</a></li>
+                <li><a href="appointment.html" class="nav-link">Appointment</a></li>
+                <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="blogs.html" class="nav-link active">Blog</a></li>
+                <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Health & Wellness Blog</h1>
+            <p>Stay informed with the latest health tips, medical news, and wellness advice</p>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog-section">
+        <div class="container">
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/heart.jpg" alt="Heart Health">
+                        <div class="blog-category">Cardiology</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> January 15, 2024</span>
+                            <span><i class="fas fa-user"></i> Dr. John Smith</span>
+                        </div>
+                        <h3>10 Tips for a Healthy Heart</h3>
+                        <p>Discover essential lifestyle changes and habits that can significantly improve your cardiovascular health and reduce the risk of heart disease.</p>
+                        <button class="btn btn-outline" onclick="openBlogModal('heart-health')">Read More</button>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/child.jpg" alt="Child Nutrition">
+                        <div class="blog-category">Pediatrics</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> January 12, 2024</span>
+                            <span><i class="fas fa-user"></i> Dr. Emily Davis</span>
+                        </div>
+                        <h3>Nutrition Guidelines for Growing Children</h3>
+                        <p>Learn about proper nutrition for children at different stages of development and how to establish healthy eating habits early.</p>
+                        <button class="btn btn-outline" onclick="openBlogModal('child-nutrition')">Read More</button>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/meditation.jpg" alt="Mental Health">
+                        <div class="blog-category">Mental Health</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> January 10, 2024</span>
+                            <span><i class="fas fa-user"></i> Dr. Sarah Johnson</span>
+                        </div>
+                        <h3>Managing Stress in Modern Life</h3>
+                        <p>Effective strategies for managing stress and maintaining mental well-being in today's fast-paced world.</p>
+                        <button class="btn btn-outline" onclick="openBlogModal('stress-management')">Read More</button>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/excercise.jpg" alt="Exercise Benefits">
+                        <div class="blog-category">Wellness</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> January 8, 2024</span>
+                            <span><i class="fas fa-user"></i> Dr. James Miller</span>
+                        </div>
+                        <h3>The Benefits of Regular Exercise</h3>
+                        <p>Explore how regular physical activity can improve your overall health, boost immunity, and enhance quality of life.</p>
+                        <button class="btn btn-outline" onclick="openBlogModal('exercise-benefits')">Read More</button>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/diabetes.jpg" alt="Diabetes Prevention">
+                        <div class="blog-category">Endocrinology</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> January 5, 2024</span>
+                            <span><i class="fas fa-user"></i> Dr. Robert Wilson</span>
+                        </div>
+                        <h3>Preventing Type 2 Diabetes</h3>
+                        <p>Learn about risk factors, prevention strategies, and lifestyle modifications to reduce your risk of developing diabetes.</p>
+                        <button class="btn btn-outline" onclick="openBlogModal('diabetes-prevention')">Read More</button>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/skin.jpg" alt="Skin Care">
+                        <div class="blog-category">Dermatology</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> January 3, 2024</span>
+                            <span><i class="fas fa-user"></i> Dr. Maria Garcia</span>
+                        </div>
+                        <h3>Winter Skin Care Tips</h3>
+                        <p>Essential tips for maintaining healthy skin during winter months and protecting against common seasonal skin problems.</p>
+                        <button class="btn btn-outline" onclick="openBlogModal('winter-skincare')">Read More</button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Modal -->
+    <div class="modal" id="blogModal">
+        <div class="modal-content blog-modal-content">
+            <span class="modal-close" onclick="closeBlogModal()">&times;</span>
+            <div class="blog-modal-header">
+                <h2 id="modal-blog-title"></h2>
+                <div class="blog-modal-meta">
+                    <span id="modal-blog-date"></span>
+                    <span id="modal-blog-author"></span>
+                </div>
+            </div>
+            <div class="blog-modal-body">
+                <img id="modal-blog-image" src="/placeholder.svg" alt="">
+                <div id="modal-blog-content"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-heartbeat"></i>
+                        <span>MediCare</span>
+                    </div>
+                    <p>Providing quality healthcare services with compassion and expertise.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="doctors.html">Our Doctors</a></li>
+                        <li><a href="appointment.html">Book Appointment</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Healthcare St, Medical City</p>
+                        <p><i class="fas fa-phone"></i> +1-234-567-8900</p>
+                        <p><i class="fas fa-envelope"></i> info@medicare.com</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 MediCare Hospital. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+     <!-- Floating Chatbot Button -->
+<img src="images/chatbot.jpg" alt="Chatbot" id="chatbotBtn"
+     style="position: fixed; bottom: 20px; right: 20px; width: 60px; cursor: pointer; z-index: 999; border-radius: 30px;" />
+
+<!-- Chatbot Modal -->
+<div id="chatbotModal" style="display:none; position:fixed; bottom:90px; right:20px; width: 350px; height: 500px; background:white; border-radius:10px; box-shadow: 0 0 10px rgba(0,0,0,0.2); z-index:999;">
+  <div style="text-align:right; padding: 5px;">
+    <button onclick="document.getElementById('chatbotModal').style.display='none'">✖</button>
+  </div>
+  <iframe src="https://chatbot-six-tawny-92.vercel.app/" width="100%" height="90%" style="border:none;"></iframe>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

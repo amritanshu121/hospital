@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Doctors - MediCare Hospital</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-heartbeat"></i>
+                <span>MediCare</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="doctors.html" class="nav-link active">Doctors</a></li>
+                <li><a href="appointment.html" class="nav-link">Appointment</a></li>
+                <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="blogs.html" class="nav-link">Blog</a></li>
+                <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Expert Doctors</h1>
+            <p>Meet our team of experienced and dedicated healthcare professionals</p>
+        </div>
+    </section>
+
+    <!-- Doctor Filters -->
+    <section class="doctor-filters">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Doctors</button>
+                <button class="filter-btn" data-filter="cardiology">Cardiology</button>
+                <button class="filter-btn" data-filter="pediatrics">Pediatrics</button>
+                <button class="filter-btn" data-filter="neurology">Neurology</button>
+                <button class="filter-btn" data-filter="orthopedics">Orthopedics</button>
+                <button class="filter-btn" data-filter="dermatology">Dermatology</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Doctors Grid -->
+    <section class="doctors-grid">
+        <div class="container">
+            <div class="doctors-container">
+                <!-- Cardiology Doctors -->
+                <div class="doctor-card" data-category="cardiology">
+                    <div class="doctor-image">
+                        <img src="male1.jpg" alt="Dr. John Smith">
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. John Smith</h3>
+                        <p class="specialty">Cardiologist</p>
+                        <p class="experience">15+ Years Experience</p>
+                        <div class="doctor-details">
+                            <p>Specialized in heart surgery and cardiovascular diseases. Board-certified cardiologist with extensive experience.</p>
+                        </div>
+                        <div class="doctor-contact">
+                            <button class="btn btn-primary">Book Appointment</button>
+                            <div class="doctor-social">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="doctor-card" data-category="cardiology">
+                    <div class="doctor-image">
+                        <img src="female.jpg" alt="Dr. Sarah Johnson">
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Sarah Johnson</h3>
+                        <p class="specialty">Interventional Cardiologist</p>
+                        <p class="experience">12+ Years Experience</p>
+                        <div class="doctor-details">
+                            <p>Expert in minimally invasive cardiac procedures and heart disease prevention.</p>
+                        </div>
+                        <div class="doctor-contact">
+                            <button class="btn btn-primary">Book Appointment</button>
+                            <div class="doctor-social">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pediatrics Doctors -->
+                <div class="doctor-card" data-category="pediatrics">
+                    <div class="doctor-image">
+                        <img src="male2.jpg" alt="Dr. Michael Brown">
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Michael Brown</h3>
+                        <p class="specialty">Pediatrician</p>
+                        <p class="experience">18+ Years Experience</p>
+                        <div class="doctor-details">
+                            <p>Dedicated to providing comprehensive healthcare for children from infancy through adolescence.</p>
+                        </div>
+                        <div class="doctor-contact">
+                            <button class="btn btn-primary">Book Appointment</button>
+                            <div class="doctor-social">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="doctor-card" data-category="pediatrics">
+                    <div class="doctor-image">
+                        <img src="female.jpg" alt="Dr. Emily Davis">
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Emily Davis</h3>
+                        <p class="specialty">Pediatric Surgeon</p>
+                        <p class="experience">14+ Years Experience</p>
+                        <div class="doctor-details">
+                            <p>Specialized in pediatric surgical procedures with a focus on minimally invasive techniques.</p>
+                        </div>
+                        <div class="doctor-contact">
+                            <button class="btn btn-primary">Book Appointment</button>
+                            <div class="doctor-social">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Neurology Doctors -->
+                <div class="doctor-card" data-category="neurology">
+                    <div class="doctor-image">
+                        <img src="male1.jpg" alt="Dr. Robert Wilson">
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Robert Wilson</h3>
+                        <p class="specialty">Neurologist</p>
+                        <p class="experience">20+ Years Experience</p>
+                        <div class="doctor-details">
+                            <p>Expert in treating neurological disorders including epilepsy, stroke, and neurodegenerative diseases.</p>
+                        </div>
+                        <div class="doctor-contact">
+                            <button class="btn btn-primary">Book Appointment</button>
+                            <div class="doctor-social">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Orthopedics Doctors -->
+                <div class="doctor-card" data-category="orthopedics">
+                    <div class="doctor-image">
+                        <img src="male2.jpg" alt="Dr. James Miller">
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. James Miller</h3>
+                        <p class="specialty">Orthopedic Surgeon</p>
+                        <p class="experience">16+ Years Experience</p>
+                        <div class="doctor-details">
+                            <p>Specialized in joint replacement surgery and sports medicine with advanced arthroscopic techniques.</p>
+                        </div>
+                        <div class="doctor-contact">
+                            <button class="btn btn-primary">Book Appointment</button>
+                            <div class="doctor-social">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dermatology Doctors -->
+                <div class="doctor-card" data-category="dermatology">
+                    <div class="doctor-image">
+                        <img src="female.jpg" alt="Dr. Maria Garcia">
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Maria Garcia</h3>
+                        <p class="specialty">Dermatologist</p>
+                        <p class="experience">11+ Years Experience</p>
+                        <div class="doctor-details">
+                            <p>Expert in medical and cosmetic dermatology, specializing in skin cancer treatment and prevention.</p>
+                        </div>
+                        <div class="doctor-contact">
+                            <button class="btn btn-primary">Book Appointment</button>
+                            <div class="doctor-social">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-heartbeat"></i>
+                        <span>MediCare</span>
+                    </div>
+                    <p>Providing quality healthcare services with compassion and expertise.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="doctors.html">Our Doctors</a></li>
+                        <li><a href="appointment.html">Book Appointment</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Healthcare St, Medical City</p>
+                        <p><i class="fas fa-phone"></i> +1-234-567-8900</p>
+                        <p><i class="fas fa-envelope"></i> info@medicare.com</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 MediCare Hospital. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+     <!-- Floating Chatbot Button -->
+<img src="images/chatbot.jpg" alt="Chatbot" id="chatbotBtn"
+     style="position: fixed; bottom: 20px; right: 20px; width: 60px; cursor: pointer; z-index: 999; border-radius: 30px;" />
+
+<!-- Chatbot Modal -->
+<div id="chatbotModal" style="display:none; position:fixed; bottom:90px; right:20px; width: 350px; height: 500px; background:white; border-radius:10px; box-shadow: 0 0 10px rgba(0,0,0,0.2); z-index:999;">
+  <div style="text-align:right; padding: 5px;">
+    <button onclick="document.getElementById('chatbotModal').style.display='none'">✖</button>
+  </div>
+  <iframe src="https://chatbot-six-tawny-92.vercel.app/" width="100%" height="90%" style="border:none;"></iframe>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
